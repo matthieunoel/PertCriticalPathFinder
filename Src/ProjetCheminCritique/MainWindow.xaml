@@ -1,0 +1,16 @@
+﻿<Window x:Name="MainWindow1" x:Class="ProjetCheminCritique.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetCheminCritique"
+        mc:Ignorable="d"
+        Title="Critical Path Finder" Height="450" Width="800" Initialized="Init" ResizeMode="CanResize">
+    <Grid>
+        <Button x:Name="MainButton" Content="MainButton" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100" ScrollViewer.CanContentScroll="True" Click="MainButtonClick" Height="33"/>
+        <Button x:Name="SecondaryButton" Content="SecondaryButton" HorizontalAlignment="Left" Margin="20,0,0,63" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100" ScrollViewer.CanContentScroll="True" Click="SecondaryButtonClick" Height="33"/>
+        <Button x:Name="TerciButton" Content="TerciButton" HorizontalAlignment="Left" Margin="20,0,0,106" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100" ScrollViewer.CanContentScroll="True" Click="TerciButtonClick" Height="33"/>
+        <TextBox x:Name="DisplayArea" Text="DisplayArea" Margin="140,20,20,20" BorderThickness="2,2,2,2" BorderBrush="#3F000000" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True" Cursor="Arrow"/>
+        <DataGrid x:Name="DisplayGrid" Margin="140,20,20,20" BorderThickness="2,2,2,2" BorderBrush="#3F000000" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True" Cursor="Arrow"/>
+    </Grid>
+</Window>
